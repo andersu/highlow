@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HighLow</string>
+	<string name="welcome">Welcome to HighLow!</string>
+	<string name="start_game">Start Game</string>
+	<string name="highscores">Highscores</string>
+	<string name="higher">Higher</string>
+	<string name="lower">Lower</string>
+	<string name="current_number">The current number is…</string>
+	<string name="next_number">I think the next number will be…</string>
+	<string name="score">Score: </string>
+	<string name="play_again">Play Again</string>
+	<string name="submit_score">Submit Score</string>
+	<string name="name">Name…</string>
+</resources>

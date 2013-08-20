@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewCurrentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/current_number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewCurrentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCurrentTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text=""
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/textViewNextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCurrentNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/next_number"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonLower"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewNextNumber"
+        android:layout_marginLeft="50dp"
+        android:text="@string/lower" />
+
+    <Button
+        android:id="@+id/buttonHigher"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@id/buttonLower"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:text="@string/higher" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLower"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/score"
+        android:textSize="20sp" 
+        />
+
+
+    <Button
+        android:id="@+id/buttonPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNextNumber"
+        android:layout_centerHorizontal="true"
+        android:text="@string/play_again" 
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewScore"
+        android:layout_width="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="@string/name"
+        android:ems="10" 
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/buttonSubmitScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/editTextName"
+        android:layout_alignBaseline="@id/editTextName"
+        android:text="@string/submit_score" 
+        android:visibility="invisible"/>
+
+</RelativeLayout>

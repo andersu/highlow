@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cool_blue">#1B8EE0</color>
+    <color name="fail_red">#B31E00</color>
+    <color name="correct_green">#59B300</color>
+</resources>
